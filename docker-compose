@@ -1,0 +1,14 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_APPLICATION_NAME: back
+      SPRING_DATASOURCE_URL: jdbc:mysql://moneda-mysql-2bd3f61a-shuertas981-f593.d.aivencloud.com:22433/cinespoiler
+      SPRING_DATASOURCE_USERNAME: avnadmin
+      SPRING_DATASOURCE_PASSWORD: ${password}
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      LOGGING_LEVEL_ORG_HIBERNATE_TYPE: TRACE
