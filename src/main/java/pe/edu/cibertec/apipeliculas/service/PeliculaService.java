@@ -35,6 +35,7 @@ public class PeliculaService {
         existingPelicula.setDirector(pelicula.getDirector());
         existingPelicula.setDuracion(pelicula.getDuracion());
         existingPelicula.setAnio(pelicula.getAnio());
+        existingPelicula.setPrecio(pelicula.getPrecio());
         return repository.save(existingPelicula);
     }
 

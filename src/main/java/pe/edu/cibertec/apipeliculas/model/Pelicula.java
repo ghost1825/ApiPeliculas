@@ -16,6 +16,7 @@ public class Pelicula {
     private String director;
     private int duracion;
     private int anio;
+    private double precio;
 
     public int getId() {
         return id;
@@ -79,5 +80,12 @@ public class Pelicula {
 
     public void setAnio(int anio) {
         this.anio = anio;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+    public void setPrecio(double precio) {
+        this.precio = precio;
     }
 }
